@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: MagistralC-Bold,AdobeInvisFont,MyriadPro-Regular;
+}
+/* Style for body tag starts */
+#body {
+    background-color: #000;
+}
+#body * {
+    color: #fff;
+}
+#body2 * {
+    color: #000;
+}
+.menu {
+    padding-top: 2vw;   
+}
+#body2 span {
+    font-size: 0.92vw;   
+}
+/* Style for body tag ends */
+
+/* Header Banner/Hero section Starts*/
+.banner img {
+    width: 100%;
+}
+/* Hero text starts*/
+#hero-text {
+    padding: 13vw 0 13vw 19vw; 
+}
+#hero-text #tilt {
+    transform: skew(-20deg);
+}
+#hero-text h1 {
+    transform: rotate(-10deg);
+    text-shadow: 5px 2px rgba( 0, 0, 0, 1 );
+    font-size: 4.3vw;
+}
+#kont {
+    background-color: #eb6c10
+}
+#kont:hover {
+    background-color: #f14c2e;
+    box-shadow: 0 1px 8px rgba( 57, 73, 76, 0.35 );
+}
+.btn {
+    border: none;
+    padding: 0.3vw 2vw;
+    font-size: 2.9vw;
+}
+/* Hero text ends*/
+/* Header Banner/Hero section Ends*/
+
+/* Section 2 drivers starts */
+.section-2 {
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.section-2 #drivers, .section-2 #summary {
+    flex: 50%;
+}
+.section-2 #summary {
+    padding-top: 3vw;
+    font-size: 1.5vw;
+}
+.section-2 .drivers_showcase img {
+    border-radius: 50%;
+    width: 9.1vw;
+    box-shadow: 0 1px 6px rgba( 0, 0, 0, .6 );
+}
+/* Section 2 drivers ends */
+
+/* Main Drivers section and intro starts */
+#desc img {
+    width: 100%;
+}
+.author {
+    font-size: 1.2vw;
+}
+#author-intro {
+    margin-top: 6vw; 
+    font-size: 1.34vw;
+}
+/* Main Drivers section and intro ends */
+.drivers_showcase #driver1, .drivers_showcase #driver2 {
+    padding: 2vw 4.5vw 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.pre span, .pre, .bre {
+    display: block;
+}
+/* General style section starts */
+.overlay {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.pt-20 {
+    padding: 1.7vw 2vw;
+}
+.pt-20-2 {
+    padding: 3vw 2vw;
+}
+.pty-20 {
+    padding: 5vw 18vw; 
+}
+.mT-10 {
+    margin-top: 2vw;
+}
+.mT-8 {
+    margin-top: 1.5vw;
+}
+.mT-20 {
+    margin-top: 4vw;
+}
+.pb-20 {
+    padding: 20%;
+}
+.pbR-10 {
+    padding-right: 10vw;
+}
+.pbT-10 {
+    padding-top: 12vw;
+}
+.pbT-10-2 {
+    padding-top: 4vw;
+}
+.pbB-10 {
+    padding-bottom: 10vw;
+}
+.fs-20, .fs-20-2 {
+    font-size: 1.3vw;
+}
+.fs-15 {
+    font-size: 1vw;
+}
+.fs-58 {
+    font-size: 58vw;
+}
+.fs-400 {
+    font-size: 2vw;
+}
+.fs-20-m-10 {
+    font-size: 2vw;
+}
+.fs-20-m-5 {
+    font-size: 1.7vw;
+}
+.fs-25-m {
+    font-size: 1.73vw;
+}
+.ff-magistral {
+    font-family: MagistralC-Bold,AdobeInvisFont,MyriadPro-Regular;
+}
+.ff-magistral_book {
+    font-family: MyriadPro-Regular,MagistralC-Bold;
+ }
+.pull-right {
+    float: right;
+}
+.strip-underline-list {
+    list-style-type: none;
+}
+.strip-underline-link {
+    text-decoration: none;
+}
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.top-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pos-absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.flex-row, .flex-row-m {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex-center, .flex-center-m {
+    justify-content: center;
+    align-items: center;
+}
+/* General style section ends */
+.mobile-space {
+    display: none;
+}
+.carslist img {
+    width: 20vw;
+}
+.centeredcar {
+    margin: 4vw 1.5vw;
+}
+#pic {
+    background-color:#fff;
+}
+.m-ex {
+    font-size: 3.5vw;
+}
+.bg-b {
+    background: rgba( 0, 0, 0, .7 );
+    bottom: 0;
+    text-align: center;
+    display: none;
+    padding-top: 5vw;
+    font-size: 20px;
+}
+.text-overlay {
+    background: #fff;
+    height: 13.3vw;
+}
+.text-overlay  img {
+    box-shadow: 0 1px 6px rgba( 0, 0, 0, .6 );
+}
+.mb-20 {
+    margin: 2.9vw 12.5vw 2.5vw 18.5vw;
+}
+.mT-50 {
+    margin-top: 13vw;
+}
+.back {
+    font-size: 1.1vw;
+    background-color: #f6f6f6;
+    border: none;
+    font-weight: bolder;
+    font-style: italic;
+}
+.fs-30 {
+    font-size: 3.2vw;
+}
+.hz {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 0.98vw;
+}
+.mT-15 {
+    margin-top: 2.5vw;
+}
+.mT-5 {
+    margin-top: 0.5vw;
+}
+.mT-3 {
+    margin-top: 0.5vw;
+}
+.fs-22 {
+    font-size:1.4vw;
+}
+.fs-25 {
+    font-size:1.45vw;
+    font-weight: bolder;
+}
+.fa-fs {
+    font-size: 1.34vw;
+}
+.fs-im {
+    font-size: 3.5vw
+}
+.menumobile {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+/* css for mobile with screen width lower than 768px starts*/
+@media screen and ( max-width: 768px ) {
+    .fa-fs {
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    #menudesktop {
+        display: none;
+    }
+    .menumobile {
+        display: inline-block;
+        font-size: 8vw;
+    }
+    .menuitems {
+        position: fixed;
+        background: #f2f2f2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 110%;
+        z-index: 99;
+        padding: 3vw;
+        transition: left .9s;
+    }
+    .menuitems a {
+        display: block;
+    }
+    .fs-im {
+        font-size: 10vw
+    }
+    .fs-25-m {
+        font-size: 6vw;
+    }
+    .hz {
+        font-size: 6vw;
+    }
+    .mb-20 {
+        margin: 2.9vw 5vw 2.5vw 5vw;
+    }
+    #body2 span {
+        font-size: 4vw;   
+    }
+    .back {
+        font-size: 6vw;
+    }
+    .fs-22 {
+        font-size:5.5vw;
+        text-align: left;
+    }
+    .fs-30 {
+        font-size: 5vw;
+    }
+    .mT-15 {
+        margin-top: 2vw;
+    }
+    .mb-20 {
+        margin: 5vw;
+    }
+    .fs-20-m-5 {
+        font-size: 6vw;
+    }
+    .pty-20 {
+        padding: 5vw 4vw; 
+    }
+    .btn {
+        border: none;
+        padding: 2vw 3vw;
+        font-size: 10vw;
+    }
+    .mT-5 {
+        margin-top: 7vw;
+    }
+    .m-ex {
+        font-size: 14vw;
+    }
+    .pt-20-2 {
+        padding: 4vw 2vw;
+    }
+    .fs-20-2 {
+        font-size: 3vw;
+    }
+    .flex-center-m {
+        justify-content: center;
+        align-items: initial;
+    }
+    .flex-row-m {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .text-center-m {
+        text-align: center;
+        padding-top: 4%; 
+    }
+    #pic {
+        background-color:#af241a;
+    }
+    .vv {
+        margin: 5vw;
+    }
+    .centeredcar {
+        margin: 4vw 0;
+    }
+    .fs-20-m-10 {
+        font-size: 5.4vw;
+    }
+    .fw-bold {
+        font-weight: bold;
+    }
+    .bre span, .bre {
+        display: inline;
+    }
+    .carslist img {
+        width: 100%;
+    }
+    .centeredcar {
+        margin-top: 8vw;
+    }
+    .hiddencars {
+        display: none;
+    }
+    .pbT-10-2 {
+        padding-top: 5vw;
+    }
+    .mobile-space {
+        height: 215vw;
+        display: block;
+    }
+    .fs-400 {
+        font-size: 7.5vw;
+    }
+    .text-overlay {
+       height: 67vw;
+    }
+    .drivers_showcase #driver1, .drivers_showcase #driver2 {
+        padding:12vw 3vw 0 0;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .author {
+        font-size: 5vw;
+        margin-left: 8vw;
+        text-align: justify;
+    }
+    #hero-text {
+        margin: 80vw 10% 20% 10%; 
+        padding: 0;
+    }
+    #hero-text h1 {
+        font-size: 12.8vw;
+    }
+    .section-2 .drivers_showcase img {
+        width: 40vw;
+    }
+    .flex-row {
+        flex-flow: column nowrap;
+    }
+    .fs-15 {
+        font-size: 5vw;
+    }
+    #summary {
+        border-top: 10vw;
+    }
+    #author-intro {
+         
+        margin-top: 25vw;
+        font-size: 4.5vw;
+    }
+    .section-2 {
+        padding: 1vw;
+    }
+    #drivers {
+        padding: 0 6vw;
+    }
+    .drivers_showcase #driver1, .drivers_showcase #driver2 {
+        padding-left: 5vw;
+    }
+    .drivers_showcase #driver2 {
+        padding-top: 8vw;
+    }
+    .mT-10 {
+        margin-top: 4vw;
+    }
+    .mT-20 {
+        margin-top: 15vw;
+    }
+    .bre.mT-10 {
+        margin-top: 0;
+    }
+    .section-2 #summary {
+        padding: 15vw 5vw 0 5vw;
+        font-size: 5vw;
+        text-align: justify;
+    }
+}
+/* css for mobile with screen width lower than 768px ends*/

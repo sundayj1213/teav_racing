@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Teav Racing</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Racing starts with passion" />
+        <meta name="og:title" content="Teav Racing" />
+        <meta name="og:description" content="Racing starts with passion" />
+        <meta name="og:site_name" content="Teav Racing" />
+        <meta name="og:image" content="assets/images/car2.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css?v=1.4.17" />
+        <link rel="stylesheet" href="assets/fonts/MagistralC-Bold.css" />
+        <link rel="stylesheet" href="assets/fonts/AdobeInvisFont.css" />
+        <link rel="stylesheet" href="assets/fonts/MyriadPro-Regular.css?v=1.1.0" />
+        <link rel="stylesheet" href="assets/fonts/MagistralC-Book.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body id="body">
+         <div id='loader'>
+          <div class="spinner"></div>
+        </div>
+        <script>
+            window.addEventListener('load', () => {
+                const loader = document.getElementById('loader');
+                setTimeout(() => {
+                  loader.classList.add('fadeOut');
+                }, 100);
+            });
+        </script>
+         <!-- Section 1 Starts -->
+        <header class="overlay banner">
+            <picture>
+                <source media="(min-width: 767px)" srcset="assets/images/section-1_desktop.png">
+                <img src="assets/images/section-1_mobile.png" alt="Teav Racing Banner"/>
+            </picture>
+            <nav class="menu pt-20 fs-20 top-right">
+                <div class="menumobile menuhamburger" data-opened="0"><i class="material-icons mm" style="font-size:10vw">menu</i></div>
+                <div class="menumobile menuitems mm">
+                    <a class="strip-underline-link mm" id="uber" href="#drivers" style="color: #000;"><b style="color: #000;">Ü</b>BER</a>
+                    <a class="strip-underline-link mm" href="mailto:info@teasag.com" style="color: #000;">KONTAKT</a>
+                </div>
+                <ul id="menudesktop">
+                    <li class="ff-magistral pull-right strip-underline-list" style="padding:20px">
+                        <a class="strip-underline-link" href="mailto:info@teasag.com">KONTAKT</a>
+                    </li><!-- .ff-magistral.pull-right.strip-underline-list -->
+                    <li class="ff-magistral pull-right strip-underline-list" style="padding:20px 0 20px 20px">
+                        <a class="strip-underline-link" id="uber" href="#drivers"><b>Ü</b>BER</a>
+                    </li><!-- .ff-magistral.pull-right.st -->
+                </ul>
+            </nav><!-- #menu.pt-20.fs-20.top-right -->
+            <div id="hero-text" class="top-left">
+                <div id="tilt">
+                    <h1>Racing starts with passion</h1>
+                </div><!-- #tilt -->
+            </div><!-- #hero-text.top-left -->
+        </header><!-- .overlay.banner -->
+         <!-- Section 1 Ends -->
+        <main>
+            <!-- Section 2 Starts -->
+            <section class="overlay banner" style="margin-bottom: 4vw">
+                <picture>
+                    <source media="(min-width: 767px)" srcset="assets/images/section-2_desktop.png">
+                    <img src="assets/images/section-2_mobile.png" alt="Teav Racing Container"/>
+                </picture>
+
+                <!-- top-center class centralizes the div and is placed absolutely on the relative overlay class -->
+                <div class="flex-row top-center section-2">
+                    <!-- These boxes are displayed within a flex both with a flex property of 50% and breaks into 100% for mobile screens -->
+                    <div id="drivers">
+                        <h6 class="fa-fs">Fahrer: </h6><!-- .fs-15 -->
+                        <div class="flex-row drivers_showcase">
+                            <div id="driver1">
+                                <div style="margin-bottom:1.5vw;">
+                                    <img src="assets/images/Thomas-Schnadt-Unternehmer.png" alt="Thomas Schnadt Unternehmer" />
+                                </div>
+                                <div class="text-center author">
+                                    <span style="display: block">Thomas Schnadt</span>
+                                    <span class="ff-magistral_book">Unternehmer</span>
+                                </div><!-- .text-center.pt-20 -->
+                            </div><!-- #driver1 -->
+                            <div id="driver2">
+                                <div style="margin-bottom:1.5vw;">
+                                    <img src="assets/images/Alexander-Schnadt-Student.png" alt="Alexander Schnadt Student" />
+                                </div>
+                                <div class="text-center author">
+                                    <span style="display: block">Alexander Schnadt</span>
+                                    <span class="ff-magistral_book">Student</span>
+                                </div><!-- .text-center.pt-20 -->
+                            </div><!-- #driver2 -->
+                        </div><!-- .flex-row.flex-center -->
+
+                        <!-- The spans within the pre class helps keeps the texts in place for larger screens producing the same effects as <pre> tag as in PSD document -->
+                        <article id="author-intro" class="bre text-center-m">
+                            <p>Eigentümer:</p>
+                            <p class="pre ff-magistral_book bre">
+                                <span class="ff-magistral_book">Thomas Schnadt, motorsportbegeistert</span>
+                                <span class="ff-magistral_book">seit Jahrzehnten</span>
+                            </p>
+                            <p class="mT-8 pre">Gegründet: <i class="ff-magistral_book" style="font-style: normal">2016</i></p>
+                            <p class="mT-8 pre bre">
+                                <span>Fahrzeug: <i class="ff-magistral_book" style="font-style: normal">TCR Klasse</i></span>
+                                <span class="ff-magistral_book pre">VW Golf R MK6, aufgebaut ab Werk </span>
+                                <span class="ff-magistral_book pre">von Volkswagen Racing </span>
+                                <span class="ff-magistral_book pre">330 PS, 2 ltr Hubraum </span>
+                                <span class="ff-magistral_book pre">1200 kg Gewicht </span>     
+                            </p>                              
+                        </article><!-- #author-intro -->
+                    </div><!-- #drivers -->
+                    <div id="summary">
+                        <p class="mT-10 pre">
+                            <span>Nach einigen Jahren als Beifahrer</span>
+                            <span>entstand der Gedanke ein eigenes</span>
+                            <span>Fahrzeug anzuschaffen.</span>
+                        </p>
+
+                        <p class="mT-10">
+                            <span>Durch den Ideenaustausch mit der</span>
+                            <span>Autobau AG, G2 Racing und Rent for</span> 
+                            <span>Ring angeregt, wurde TEAV Racing 2016</span>
+                            <span>gegründet und ein Fahrzeug der TCR</span>
+                            <span>Klasse gekauft.</span>
+                        </p>
+
+                        <p class="mT-10 pre">
+                            <span>Das Fahrzeug fuhr 3 Jahre im </span>
+                            <span>polnischen Cup und wurde durch das</span>
+                            <span>Werk betreut.</span>
+                        </p>
+
+                        <p class="mT-20 pre fs-22 bre">
+                            <span class="ff-magistral_book">Es handelt sich um ein robustes Auto, das zum</span> 
+                            <span class="ff-magistral_book">einen auf feinste Renntechnik setzt, aber auch viele</span>
+                            <span class="ff-magistral_book">Komponenten aus der Großserie enthält. Dadurch</span>
+                            <span class="ff-magistral_book">lässt es ich in einem guten Kosten/Nutzen Rahmen</span>
+                            <span class="ff-magistral_book">bewegen.</span>
+                        </p>
+                    </div><!-- #summary -->
+                </div><!-- .flex-row.top-center.section-2.pbL-19.pbR-19.pbT-1.pbB-1 -->
+            </section><!-- .overlay.banner -->
+             <!-- Section 2 Ends -->
+             <!-- This section serves to be a dark background for section 2 just below article on mobile screens -->
+            <section class="overlay mobile-space">
+               &nbsp;
+            </section>
+             <!-- Section 3 Starts -->
+            <section class="overlay banner" id="pic">
+                <picture>
+                    <source media="(min-width: 767px)" srcset="assets/images/section-3_desktop.png">
+                    <img src="assets/images/section-3_mobile.png?gg" alt="Teav Racing Container"/>
+                </picture>
+                <div class="top-center text-center fs-400 pbT-10-2">
+                    <h1 style="color: #000;font-style: italic;" class="fs-im">Impressionen</h1>
+                    <div class="flex-row flex-center-m carslist">
+                        <div class="overlay text-overlay hiddencars">
+                            <img src="assets/images/car1.png" class="carshighlight" alt="Teav Racing Track" />
+                            <span class="top-center bg-b">
+                                Some text
+                            </span>
+                        </div><!-- .overlay -->
+                        <div class="overlay text-overlay centeredcar">
+                            <img src="assets/images/car2.png" class="carshighlight" alt="Teav Racing Pack" />
+                            <span class="top-center bg-b">
+                                    Some text
+                            </span>
+                        </div><!-- .overlay -->
+                        <div class="overlay text-overlay hiddencars">
+                            <img src="assets/images/car3.png" class="carshighlight" alt="Teav Racing Drive" />
+                            <span class="top-center bg-b">
+                                    Some text
+                            </span>
+                        </div><!-- .overlay -->
+                    </div><!-- .flex-row.flex-center.carslist -->
+                </div><!-- .top-center.text-center.fs-400.pbT-10-2 -->
+            </section>
+             <!-- Section 3 Ends -->
+              <!-- Section 4 Starts -->
+            <section class="overlay banner" style="background-color:#af241a">
+                <picture>
+                    <source media="(min-width: 767px)" srcset="assets/images/section-4_desktop.png">
+                    <img src="assets/images/section-4_mobile.png?v=1.0.1" alt="Teav Racing Container"/>
+                </picture>
+                <div class="top-center text-center fs-20-m-10 pbT-10-2 p-b vv">
+                    <h1 style="font-style: italic;" class="fs-im"><b>Teilnahme an Track Days</b></h1>
+                    <p class="pre">
+                        <span class="fs-25-m">z.B. Mugello, Monza, Spa, Hockenheim, Brünn oder Paul Ricard.</span>
+                        <span class="mT-10 fs-25-m">Es geht um einmalige Erlebnisse auf und an der Strecke.</span>
+                        <span class="fs-25-m">Unterstützt durch Mechaniker und professionelle Betreuung vor Ort</span>
+                        <span class="fs-25-m">entsteht ein einmaliges Rennstreckenerlebnis.</span>
+                        <span class="mT-10 fs-25-m">Professionelle Betreuung durch Francesco Lopez.</span> 
+                    </p><!-- .pre -->
+                </div><!-- .top-center.text-center.fs-20-m-10.pbT-10-2.p-b -->
+            </section><!-- .overlay.banner -->
+             <!-- Section 4 Ends -->
+              <!-- Section 5 Starts -->
+            <section class="overlay banner">
+                <picture style="background-color:#fff">
+                    <source media="(min-width: 767px)" srcset="assets/images/section-5_desktop.png">
+                    <img src="assets/images/section-5_mobile.png" alt="Teav Racing Container"/>
+                </picture>
+                <div class="top-center pty-20 text-center-m">
+                    <h1 style="color: #000;font-style: italic;font-weight:bolder;word-break:break-all;" class="m-ex">Rennstreckenfeeling live!</h1>
+                    <p class="pre fs-20-m-5 p-i">
+                        <span class="mT-5" style="color: #000">Sie m<b style="color:#000">ö</b>chten gern selbst einmal dabei sein</span>
+                        <span style="color: #000">und  330 PS live auf der Rennstrecke erleben?</span> 
+    
+                        <span class="mT-5" style="color: #eb6c10">Dann nehmen Sie f<b style="color:#eb6c10">ü</b>r eine «Taxi-Fahrt»</span> 
+                        <span style="color: #eb6c10">der besonderen Art hier</span> 
+    
+                        <div class="mT-10 fs-20-m-10">
+                            <a href="mailto:info@teasag.com" class="btn strip-underline-link" style="font-style:italic;" id="kont">Kontakt</a>
+                        </div>
+                        <span style="color: #eb6c10;margin-top:2%;display: block" class="fs-20-m-5">mit uns auf.</span>
+                    </p>
+                </div>
+                <!-- Site Footer section starts -->
+                <footer class="text-center top-bottom pt-20-2 fs-20-2 fw-bold">
+                    <a href="mailto:info@teasag.com" style="color: #000; font-weight: bold;font-style: italic;" class="strip-underline-link">ÜBER UNS</a>
+                    <a href="impressum.html" style="color: #000;margin: 0 3vw;font-weight: bold;font-style: italic;" class="strip-underline-link">IMPRESSUM</a>
+                    <a href="impressum.html#datenschutzerklarung" style="color: #000;font-weight: bold;font-style: italic;" class="strip-underline-link">DATENSCHUTZ</a>
+                </footer><!-- .text-center.top-bottom.pt-20-2.fs-20-2.fw-bold -->
+                <!-- Site Footer section ends -->
+            </section><!-- .overlay.banner -->
+             <!-- Section 5 Ends -->
+        </main>    
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        // Add event listener for images with overlay shadow
+        $(document).on( 'mouseover mouseout', '.text-overlay img', function(e) {
+            $('.text-overlay').find('span').css({display:'none'});
+            if( !$(e.target).is( $('.text-overlay').find('span') ) && !$(e.target).is( $('.text-overlay').find('img') ) ) {
+                $('.text-overlay').find('span').css({display:'none'});
+                return;
+            }
+            var ele = $(e.target);
+                var overlay = ele.parent().find('span');
+                overlay.css({display:'block'});
+        });
+        $(document).on( 'mouseout touchstart', function(e) {
+            if( !$(e.target).is( $('.text-overlay').find('span') ) && !$(e.target).is( $('.text-overlay').find('img') ) ) {
+                $('.text-overlay').find('span').css({display:'none'});
+            }
+        });
+        $(document).on( 'click', '.menuhamburger', function(e) {
+            $('.menuitems').css({'left':'30%'});
+        });
+        $(document).on( 'click', function(e) {
+            if( !$(e.target).is('.mm') ) {
+                $('.menuitems').css({'left':'110%'});
+            }
+        });
+    </script>
+    </body><!-- #body -->
+</html> 
