@@ -80,8 +80,8 @@ $(document).ready(function(){
                         <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
                     </div>
                         
-                    <a class="prev" onclick="plusSlides(-1)">?</a>
-                    <a class="next" onclick="plusSlides(1)">?</a>
+                    <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
+                    <a class="next" onclick="plusSlides(1)">&raquo;</a>
 
                     <div class="caption-container">
                         <p id="caption"></p>
