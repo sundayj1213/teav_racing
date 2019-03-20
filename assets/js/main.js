@@ -69,7 +69,7 @@ $(document).ready(function(){
                 </div>
                 `
             );
-            var dir = "https://"+window.location.host+"/teav_racing/gallery-images";
+            var dir = "zgallery-images";
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
                 url: dir,
