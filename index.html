@@ -9,7 +9,7 @@
         <meta name="og:site_name" content="Teav Racing" />
         <meta name="og:image" content="assets/images/car2.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css?v=1.4.17" />
+        <link rel="stylesheet" href="assets/css/main.css?v=1.5.23" />
         <link rel="stylesheet" href="assets/fonts/MagistralC-Bold.css" />
         <link rel="stylesheet" href="assets/fonts/AdobeInvisFont.css" />
         <link rel="stylesheet" href="assets/fonts/MyriadPro-Regular.css?v=1.1.0" />
@@ -157,21 +157,21 @@
                     <div class="flex-row flex-center-m carslist">
                         <div class="overlay text-overlay hiddencars">
                             <img src="assets/images/car1.png" class="carshighlight" alt="Teav Racing Track" />
-                            <span class="top-center bg-b">
+                            <!-- <span class="top-center bg-b">
                                 Some text
-                            </span>
+                            </span> -->
                         </div><!-- .overlay -->
                         <div class="overlay text-overlay centeredcar">
                             <img src="assets/images/car2.png" class="carshighlight" alt="Teav Racing Pack" />
-                            <span class="top-center bg-b">
-                                    Some text
-                            </span>
+                            <!-- <span class="top-center bg-b">
+                                Some text
+                            </span> -->
                         </div><!-- .overlay -->
                         <div class="overlay text-overlay hiddencars">
                             <img src="assets/images/car3.png" class="carshighlight" alt="Teav Racing Drive" />
-                            <span class="top-center bg-b">
-                                    Some text
-                            </span>
+                            <!-- <span class="top-center bg-b">
+                                Some text
+                            </span> -->
                         </div><!-- .overlay -->
                     </div><!-- .flex-row.flex-center.carslist -->
                 </div><!-- .top-center.text-center.fs-400.pbT-10-2 -->
@@ -227,18 +227,8 @@
              <!-- Section 5 Ends -->
         </main>    
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js?v.1.0.2"></script>
     <script>
-        // Add event listener for images with overlay shadow
-        $(document).on( 'mouseover mouseout', '.text-overlay img', function(e) {
-            $('.text-overlay').find('span').css({display:'none'});
-            if( !$(e.target).is( $('.text-overlay').find('span') ) && !$(e.target).is( $('.text-overlay').find('img') ) ) {
-                $('.text-overlay').find('span').css({display:'none'});
-                return;
-            }
-            var ele = $(e.target);
-                var overlay = ele.parent().find('span');
-                overlay.css({display:'block'});
-        });
         $(document).on( 'mouseout touchstart', function(e) {
             if( !$(e.target).is( $('.text-overlay').find('span') ) && !$(e.target).is( $('.text-overlay').find('img') ) ) {
                 $('.text-overlay').find('span').css({display:'none'});
