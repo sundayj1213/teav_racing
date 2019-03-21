@@ -107,7 +107,7 @@ $(document).ready(function(){
                 error: function( err ) {
                     if( err.status == 0 && err.readyState == 0 ) {
                         jQuery
-                        .getJSON( dir+'/gallery.json', function( data ) {
+                        .getJSON( "https://"+window.location.hostname+"/teav_racing/"+dir+'/gallery.json', function( data ) {
                             var slides     = '',
                                 demo       = '',
                                 numbertext = 0,
