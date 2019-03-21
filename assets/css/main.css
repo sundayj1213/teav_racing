@@ -28,7 +28,10 @@
 }
 /* Hero text starts*/
 #hero-text {
-    padding: 13vw 0 13vw 19vw; 
+    padding-left: 19vw;
+    padding-right: 13vw;
+    padding-bottom: 0;  
+    opacity: 0;
 }
 #hero-text #tilt {
     transform: skew(-20deg);
@@ -287,8 +290,189 @@
 a {
     text-decoration: none;
 }
+/* css for scrollToTop arrow/link starts */
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    position: fixed;
+    right:30px;
+    bottom:30px;
+    display:none;
+}
+/* css for scrollToTop arrow/link ends */
+
+/* Image gallery begins*/
+
+img {
+    vertical-align: middle;
+}
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #A9A9A9;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999999999999;  
+  }
+  .container .gallery {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 10%;
+    background: rgba(169,169,169,0.7);
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+      min-height:100vh;
+      max-height:100vh;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50vh;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 3vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    position: absolute;
+    top: 0;
+  }
+  .closegal {
+    color: #f2f2f2;
+    font-size: 2vw;
+    padding: 0.5vw 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+/* Image gallery ends */
+@media screen and ( max-width: 700px ) {
+    .container .gallery {
+        margin: 25% 0;
+    }
+    .mySlides img {
+        min-height:60vh;
+        max-height:100vh;
+    }
+    .prev, .next {
+      font-size: 8vw;
+      top: 35vh;
+    } 
+    .closegal {
+        font-size: 5vw;
+        padding: 2vw;
+    }
+    .numbertext {
+        font-size: 3vw;
+        padding: 4vw 4vw;
+    }
+}
+@media screen and ( max-height: 370px ) {
+    .container .gallery {
+        margin: 0 25%;
+    }
+    .mySlides img {
+        min-height:100vh;
+        max-height:100vh;
+    }
+    .prev, .next {
+        font-size: 3vw;
+        top: 50vh;
+      } 
+    .closegal {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    .numbertext {
+        font-size: 1vw;
+        padding: 3vw 2vw;
+    }
+}
+@media screen and ( max-height: 660px ) {
+    .container .gallery {
+        margin: 0 25%;
+    }
+    .mySlides img {
+        min-height:100vh;
+        max-height:100vh;
+    }
+    .prev, .next {
+        font-size: 3vw;
+        top: 60vh;
+      }
+}
 /* css for mobile with screen width lower than 768px starts*/
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 768px ) {  
     .fa-fs {
         font-size: 6vw;
         padding: 2vw;
