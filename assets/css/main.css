@@ -419,8 +419,16 @@ img {
 /* css for mobile with screen width lower than 768px starts*/
 @media screen and ( max-width: 768px ) {
     .container .gallery {
-        margin: 10% 0;
+        margin: 25% 0;
     }
+    .mySlides img {
+        min-height:60vh;
+        max-height:100vh;
+    }
+    .prev, .next {
+      font-size: 8vw;
+      top: 35vh;
+    } 
     .fa-fs {
         font-size: 6vw;
         padding: 2vw;
