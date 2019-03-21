@@ -416,7 +416,7 @@ img {
     opacity: 1;
   }
 /* Image gallery ends */
-@media screen and ( max-width: 700px ) {
+@media screen and ( max-width: 800px ) {
     .container .gallery {
         margin: 25% 0;
     }
@@ -458,7 +458,7 @@ img {
         padding: 3vw 2vw;
     }
 }
-@media screen and ( max-height: 660px ) {
+@media screen and ( max-height: 660px )and ( max-width: 700px )  {
     .container .gallery {
         margin: 0 25%;
     }
