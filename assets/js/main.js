@@ -80,14 +80,16 @@ $(document).ready(function(){
                         total      = 0;
                         $(data).find("a").each(function () {
                             var filename = this.href.replace(window.location.host, "").replace("http:///", "").split("/")[1];
-                            if( ( filename.indexOf('.') !== -1 )  && ( filename.split(".")[1] != 'json' ) ) {
+                            console.log( filename )
+                    
+                            if( ( filename.split(".")[1] == 'jpeg' )  || ( filename.split(".")[1] == 'jpg' ) || ( filename.split(".")[1] == 'png' ) || ( filename.split(".")[1] == 'gif' ) ) {
                                 total++;
                             }
                         });
 
                     $(data).find("a").each(function () {
                         var filename = this.href.replace(window.location.host, "").replace("http:///", "").split("/")[1];
-                        if( ( filename.indexOf('.') !== -1 )  && ( filename.split(".")[1] != 'json' ) ) {
+                        if( ( filename.split(".")[1] == 'jpeg' )  || ( filename.split(".")[1] == 'jpg' ) || ( filename.split(".")[1] == 'png' ) || ( filename.split(".")[1] == 'gif' ) ) {
                             numbertext++;
                             slides += `<div class="mySlides">
                                             <div class="numbertext">` + numbertext + ` / ` + total + `</div>
@@ -161,9 +163,9 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        //dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    //dots[slideIndex-1].className += " active";
+    //captionText.innerHTML = dots[slideIndex-1].alt;
 }
