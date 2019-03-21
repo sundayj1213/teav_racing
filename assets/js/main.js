@@ -72,7 +72,7 @@ $(document).ready(function(){
             var dir = "gallery-images";
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-                url: dir,
+                url: "https://"+window.location.hostname+"/teav_racing/"+dir,
                 success: function (data) {
                     var slides     = '',
                         demo       = '',
@@ -107,7 +107,7 @@ $(document).ready(function(){
                 error: function( err ) {
                     if( err.status == 0 && err.readyState == 0 ) {
                         jQuery
-                        .getJSON( "https://"+window.location.hostname+"/teav_racing/"+dir+'/gallery.json', function( data ) {
+                        .getJSON( dir+'/gallery.json', function( data ) {
                             var slides     = '',
                                 demo       = '',
                                 numbertext = 0,
