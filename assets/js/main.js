@@ -69,7 +69,7 @@ $(document).ready(function(){
                 </div>
                 `
             );
-            var dir = "zgallery-images";
+            var dir = "gallery-images";
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
                 url: dir,
