@@ -418,6 +418,9 @@ img {
 /* Image gallery ends */
 /* css for mobile with screen width lower than 768px starts*/
 @media screen and ( max-width: 768px ) {
+    .container .gallery {
+        margin: 10% 0;
+    }
     .fa-fs {
         font-size: 6vw;
         padding: 2vw;
