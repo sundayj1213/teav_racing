@@ -103,6 +103,9 @@ $(document).ready(function(){
                     $('#gallery-images').html( slides );
                     $('.row').html( demo );
                     showSlides(slideIndex);
+                },
+                error: function( err ) {
+                    console.log( err )
                 }
             });
         }
