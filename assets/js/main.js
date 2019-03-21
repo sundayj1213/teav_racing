@@ -107,7 +107,7 @@ $(document).ready(function(){
                 error: function( err ) {
                     if( err.status == 0 && err.readyState == 0 ) {
                         jQuery
-                        .getJson( dir+'/gallery.json', function( data ) {
+                        .getJSON( dir+'/gallery.json', function( data ) {
                             var slides     = '',
                                 demo       = '',
                                 numbertext = 0,
