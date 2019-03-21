@@ -58,13 +58,13 @@ $(document).ready(function(){
                         <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
                         <a class="next" onclick="plusSlides(1)">&raquo;</a>
 
-                        <div class="caption-container">
+                        <!-- <div class="caption-container">
                             <p id="caption"></p>
                         </div>
 
                         <div class="row">
                             
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 `
@@ -80,14 +80,14 @@ $(document).ready(function(){
                         total      = 0;
                         $(data).find("a").each(function () {
                             var filename = this.href.replace(window.location.host, "").replace("http:///", "").split("/")[1];
-                            if( filename.indexOf('.') !== -1 ) {
+                            if( ( filename.indexOf('.') !== -1 )  && ( filename.split(".")[1] != 'json' ) ) {
                                 total++;
                             }
                         });
 
                     $(data).find("a").each(function () {
                         var filename = this.href.replace(window.location.host, "").replace("http:///", "").split("/")[1];
-                        if( filename.indexOf('.') !== -1 ) {
+                        if( ( filename.indexOf('.') !== -1 )  && ( filename.split(".")[1] != 'json' ) ) {
                             numbertext++;
                             slides += `<div class="mySlides">
                                             <div class="numbertext">` + numbertext + ` / ` + total + `</div>
