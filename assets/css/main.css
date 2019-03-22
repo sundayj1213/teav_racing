@@ -314,6 +314,7 @@ img {
     position: fixed;
     top: 0;
     bottom: 0;
+    margin: 0px auto;
     background: #A9A9A9;
     left: 0;
     right: 0;
