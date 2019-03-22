@@ -69,7 +69,8 @@ $(document).ready(function(){
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
                 url: dir,
-                success: function (data) {
+                success:
+                 function (data) {
                     var slides     = '',
                         demo       = '',
                         numbertext = 0,
@@ -102,7 +103,7 @@ $(document).ready(function(){
                     showSlides(slideIndex);
                 },
                 error: function( err ) {
-                    if( err.status == 0 && err.readyState == 0 ) {
+                    if( err.status == 0 && err.readyState == 0 || err.status == 404 ) {
                         jQuery
                         .ajax({
                             url: dir+'/gallery.json', 
