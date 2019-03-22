@@ -334,10 +334,7 @@ img {
   .mySlides {
     display: none;
   }
-  .mySlides img {
-      min-height:100vh;
-      max-height:100vh;
-  }
+
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
     cursor: pointer;
