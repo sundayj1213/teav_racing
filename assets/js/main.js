@@ -132,7 +132,7 @@ $(document).ready(function(){
                                 $('#gallery-images').html( slides );
                                 $('.row').html( demo );
                                 console.log( window );
-                                //$('#gallery-images').css({'margin-top','10%'});
+                                $('#gallery').css({'margin-top':(window.innerHeight/2)});
                                 showSlides(slideIndex);
                             }
                         })
