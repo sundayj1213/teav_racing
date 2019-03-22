@@ -234,10 +234,10 @@
                 $('.text-overlay').find('span').css({display:'none'});
             }
         });
-        $(document).on( 'click', '.menuhamburger', function(e) {
+        $(document).on( 'click touchstart', '.menuhamburger', function(e) {
             $('.menuitems').css({'left':'30%'});
         });
-        $(document).on( 'click', function(e) {
+        $(document).on( 'click touchstart', function(e) {
             if( !$(e.target).is('.mm') ) {
                 $('.menuitems').css({'left':'110%'});
             }
