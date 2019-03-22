@@ -327,8 +327,6 @@ img {
     left: 0;
     right: 0;
     margin: 0px auto;
-    widows:50%;; 
-    height:50%; 
     background: rgba(169,169,169,0.7);
   }
   /* Hide the images by default */
