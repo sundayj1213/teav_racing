@@ -33,7 +33,7 @@ $(document).ready(function(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if( width < 768  ) {
         if( iOS() && isMobile ) {
-            $('#hero-text').find('h1').css({'font-size':'12.1vw'}); 
+            $('#hero-text').find('h1').css({'font-size':'11vw'}); 
         }
         $('#hero-text').delay(10).animate({'padding-top':'0','opacity':'1'},800);
     } else {
