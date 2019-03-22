@@ -132,7 +132,7 @@ $(document).ready(function(){
                                 $('#gallery-images').html( slides );
                                 $('.row').html( demo );
                                  
-                                if( window.innerHeight < 768 ) {
+                                if( window.innerWidth < 768 ) {
                                     $('#gallery').css({'margin-top':(window.innerHeight/6)});
                                 }
                                 showSlides(slideIndex);
