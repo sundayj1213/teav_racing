@@ -27,7 +27,7 @@ $(document).ready(function(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if( width < 768  ) {
         if( iOS() ) {
-            $('#hero-text').css({'font-size':'4vw'}); 
+            $('#hero-text').find('h1').css({'font-size':'2vw'}); 
         }
         $('#hero-text').delay(10).animate({'padding-top':'0','opacity':'1'},800);
     } else {
