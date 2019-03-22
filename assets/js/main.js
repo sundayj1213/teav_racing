@@ -26,8 +26,8 @@ $(document).ready(function(){
     // Grab device width
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if( width < 768  ) {
-        if( !iOS() ) {
-            $('#hero-text').find('h1').css({'font-size':'12.7vw'}); 
+        if( iOS() ) {
+            $('#hero-text').find('h1').css({'font-size':'12.5vw'}); 
         }
         $('#hero-text').delay(10).animate({'padding-top':'0','opacity':'1'},800);
     } else {
