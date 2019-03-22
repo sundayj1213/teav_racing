@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     // Append element to page's body
     $('body').append( scrollToTopButton );
-
+    
     //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
@@ -26,6 +26,9 @@ $(document).ready(function(){
     // Grab device width
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if( width < 768  ) {
+        if( iOS() ) {
+            $('#hero-text').css({'font-size':'4vw'}); 
+        }
         $('#hero-text').delay(10).animate({'padding-top':'0','opacity':'1'},800);
     } else {
         $('#hero-text').delay(10).animate({'padding-top':'13vw','opacity':'1'},800); 
@@ -159,4 +162,23 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
    // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+function iOS() {
+
+    var iDevices = [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ];
+  
+    if (!!navigator.platform) {
+      while (iDevices.length) {
+        if (navigator.platform === iDevices.pop()){ return true; }
+      }
+    }
+  
+    return false;
 }
