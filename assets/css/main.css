@@ -325,7 +325,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 10% 0;
+    margin: 0 10%;
     background: rgba(169,169,169,0.7);
   }
   /* Hide the images by default */
@@ -419,6 +419,9 @@ img {
 /* Image gallery ends */
 /* css for mobile with screen width lower than 768px starts*/
 @media screen and ( max-width: 768px ) {
+    .container .gallery {
+        margin: 10% 0;
+    }
     .fa-fs {
         font-size: 6vw;
         padding: 2vw;
