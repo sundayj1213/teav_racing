@@ -131,7 +131,7 @@ $(document).ready(function(){
                                 });
                                 $('#gallery-images').html( slides );
                                 $('.row').html( demo );
-                                console.log( window )
+                                console.log( window );
                                 $('#gallery-images').css({'margin-top','10%'});
                                 showSlides(slideIndex);
                             }
