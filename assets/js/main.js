@@ -133,7 +133,7 @@ $(document).ready(function(){
                                 $('.row').html( demo );
                                  
                                 if( window.innerWidth < 951 ) {
-                                    $('#gallery').css({'margin-top':(window.innerWidth/6)});
+                                    $('#gallery').css({'margin-top':(Math.ceil(window.innerWidth/1000))+'px'});
                                 }
                                 showSlides(slideIndex);
                             }
