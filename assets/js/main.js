@@ -45,14 +45,19 @@ $(document).ready(function(){
             $('body').prepend(
                 `
                 <div class="container">
-                    <div class="gallery">
-                        <span class="closegal">&times;</span>
+                    <div id="gallery"></div>
+                    <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
+                    <a class="next" onclick="plusSlides(1)">&raquo;</a>
+                </div>
+                `
+            );
+            /*
+
                         <div id="gallery-images">
 
                         </div>
                             
-                        <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
-                        <a class="next" onclick="plusSlides(1)">&raquo;</a>
+                        
 
                         <!-- <div class="caption-container">
                             <p id="caption"></p>
@@ -61,10 +66,7 @@ $(document).ready(function(){
                         <div class="row">
                             
                         </div> -->
-                    </div>
-                </div>
-                `
-            );
+            */
             var dir = "gallery-images";
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
@@ -89,6 +91,7 @@ $(document).ready(function(){
                             numbertext++;
                             slides += `<div class="mySlides">
                                             <div class="numbertext">` + numbertext + ` / ` + total + `</div>
+                                            <span class="closegal">&times;</span>
                                             <img src="` + dir + `/` + filename + `" style="width:100%">
                                         </div><!-- .mySlides -->`;
                             demo   += `
@@ -98,8 +101,8 @@ $(document).ready(function(){
                                       `;
                         }
                     });
-                    $('#gallery-images').html( slides );
-                    $('.row').html( demo );
+                    $('#gallery').html( slides );
+                    $('#gallery').append( '<div class="row">'+demo+'</div>' );
                     showSlides(slideIndex);
                 },
                 error: function( err ) {
@@ -132,9 +135,6 @@ $(document).ready(function(){
                                 $('#gallery-images').html( slides );
                                 $('.row').html( demo );
                                  
-                                if( window.innerWidth < 951 ) {
-                                    $('#gallery').css({'margin-top':(Math.ceil(window.innerWidth/1000))+'px'});
-                                }
                                 showSlides(slideIndex);
                             }
                         })
@@ -168,9 +168,9 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        //dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    //dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active";
     //captionText.innerHTML = dots[slideIndex-1].alt;
 }

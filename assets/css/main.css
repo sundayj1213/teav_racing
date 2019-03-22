@@ -302,49 +302,51 @@ a {
     display:none;
 }
 /* css for scrollToTop arrow/link ends */
-
-/* Image gallery begins*/
-
-img {
-    vertical-align: middle;
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999; 
+    background: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: fixed;
+#gallery {
+    width: 61vw;
+}
+.mySlides {
+    padding: 0;
+    margin: 0;
+}
+.closegal {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
     top: 0;
-    bottom: 0;
-    margin: 0px auto;
-    background: #A9A9A9;
-    left: 0;
     right: 0;
-    z-index: 9999999999999999999999;  
-  }
-  .container .gallery {
-    position: fixed;
+    cursor: pointer;
+}
+.numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    margin: 0px auto;
-    background: rgba(169,169,169,0.7);
-  }
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+    position: absolute;
+}
+.cursor {
     cursor: pointer;
   }
-  
-  /* Next & previous buttons */
+
   .prev,
   .next {
     cursor: pointer;
     position: absolute;
-    top: 50vh;
+    top: 45vh;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -355,68 +357,48 @@ img {
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
+   
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+  .prev {
+      left: 0;
+  }
   
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  .row {
+    width: 70%;
   }
-  .closegal {
-    color: #f2f2f2;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  /* Six columns side by side */
   .column {
     float: left;
     width: 16.66%;
   }
-  
-  /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
-  }
-  
+  } 
   .active,
   .demo:hover {
     opacity: 1;
   }
+/* Image gallery begins*/
 /* Image gallery ends */
 /* css for mobile with screen width lower than 768px starts*/
 @media screen and ( max-width: 768px ) {
+    #gallery {
+        width: 100vw;
+    }
+    .row {
+        width: 100vw;
+      }
     .fa-fs {
         font-size: 6vw;
         padding: 2vw;
