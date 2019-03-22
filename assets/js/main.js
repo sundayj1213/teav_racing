@@ -131,8 +131,10 @@ $(document).ready(function(){
                                 });
                                 $('#gallery-images').html( slides );
                                 $('.row').html( demo );
-                                console.log( window );
-                                $('#gallery').css({'margin-top':(window.innerHeight/2)});
+                                 
+                                if( window.innerHeight < 768 ) {
+                                    $('#gallery').css({'margin-top':(window.innerHeight/6)});
+                                }
                                 showSlides(slideIndex);
                             }
                         })
