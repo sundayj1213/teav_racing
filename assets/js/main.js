@@ -51,22 +51,7 @@ $(document).ready(function(){
                 </div>
                 `
             );
-            /*
-
-                        <div id="gallery-images">
-
-                        </div>
-                            
-                        
-
-                        <!-- <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-
-                        <div class="row">
-                            
-                        </div> -->
-            */
+            
             var dir = "gallery-images";
             $.ajax({
                 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
@@ -132,8 +117,8 @@ $(document).ready(function(){
                                             </div>
                                         `;
                                 });
-                                $('#gallery-images').html( slides );
-                                $('.row').html( demo );
+                                $('#gallery').html( slides );
+                                $('#gallery').append( '<div class="row">'+demo+'</div>' );
                                  
                                 showSlides(slideIndex);
                             }
@@ -172,5 +157,5 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    //captionText.innerHTML = dots[slideIndex-1].alt;
+   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
