@@ -109,6 +109,7 @@ $(document).ready(function(){
                                     numbertext++;
                                     slides += `<div class="mySlides">
                                                 <div class="numbertext">` + numbertext + ` / ` + total + `</div>
+                                                <span class="closegal">&times;</span>
                                                 <img src="` + dir + `/` + val + `" style="width:100%">
                                             </div><!-- .mySlides -->`;
                                     demo   += `
